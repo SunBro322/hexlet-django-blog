@@ -1,2 +1,2 @@
 # hexlet-django-blog
-First app with Django
+<h1>First app with Django</h1>
