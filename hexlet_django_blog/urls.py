@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from hexlet_django_blog import views
+from . import views
 
 urlpatterns = [
     path('', views.index),
