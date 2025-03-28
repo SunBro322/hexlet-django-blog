@@ -3,10 +3,6 @@ from django.http import HttpResponse
 from django.views import View
 
 # Create your views here.
-class IndexViews(View):
-    
-    def get(self, request, *args, **kwargs):
-        return render(request, 'articles.html', context={
-            'name': 'Articles'
-        })
+def index(request, tags, article_id):
+    return HttpResponse(f"Статья номер {article_id}. Тег {tags}")
 
